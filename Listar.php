@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personas Registradas</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/pricing/">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Agrega el enlace a Bootstrap 4 y Font Awesome 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .container {
             margin-top: 20px;
@@ -36,7 +37,6 @@
             <a class="p-2 text-dark" href="/index.php">Registrar</a>
             <a class="p-2 text-dark" href="#">Actualizar</a>
             <a class="p-2 text-dark" href="#">Eliminar</a>
-
         </nav>
     </div>
 
@@ -74,14 +74,16 @@
                     echo "<td>" . $row['apellido'] . "</td>";
                     echo "<td>" . $row['direccion'] . "</td>";
                     echo "<td>" . $row['celular'] . "</td>";
-                    echo "<td>" . " <i class='fas fa-trash'></i> <i class='fas fa-pencil-alt'></i> " . "</td>";
+                    // Agrega los iconos de eliminar y actualizar con las clases de Font Awesome
+                    echo "<td><i class='fa fa-trash'></i> <i class='fa fa-pencil'></i></td>";
                     echo "</tr>";
                 }
                 ?>
             </tbody>
         </table>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua6VGu4WNy5Cq2L0p5F5w5w5x5z5h5p5uW5Z5y5+5++5U5O5Z5t5s5I5U5w5e5e5" crossorigin="anonymous"></script>
+    <!-- Incluye el script de Bootstrap 4 al final del cuerpo de la página -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>

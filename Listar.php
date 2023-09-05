@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personas Registradas</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/pricing/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGs4eF5Bz2n5Zi5z5n5uUD5b8s8bsks/k5p2I5F5I5O5e5w5r5X5o5s5t5g5" crossorigin="anonymous">
     <style>
         .container {

@@ -27,12 +27,12 @@
         <table class="table table-striped table-bordered">
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>DNI</th>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Dirección</th>
-                    <th>Celular</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">DNI</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Dirección</th>
+                    <th scope="col" >Celular</th>
                 </tr>
             </thead>
             <tbody>

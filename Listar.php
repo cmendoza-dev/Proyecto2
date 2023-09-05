@@ -31,12 +31,12 @@
                 
                 while ($row = pg_fetch_assoc($result)) {
                     echo "<tr>";
-                    echo "<td>" . $row['id'] . "</td>";
-                    echo "<td>" . $row['document'] . "</td>";
-                    echo "<td>" . $row['name'] . "</td>";
-                    echo "<td>" . $row['last_name'] . "</td>";
-                    echo "<td>" . $row['address'] . "</td>";
-                    echo "<td>" . $row['phone'] . "</td>";
+                    echo "<td>" . $row['idpersona'] . "</td>";
+                    echo "<td>" . $row['documento'] . "</td>";
+                    echo "<td>" . $row['nombre'] . "</td>";
+                    echo "<td>" . $row['apellido'] . "</td>";
+                    echo "<td>" . $row['direccion'] . "</td>";
+                    echo "<td>" . $row['celular'] . "</td>";
                     echo "</tr>";
                 }
                 ?>

@@ -74,8 +74,11 @@
                     echo "<td>" . $row['apellido'] . "</td>";
                     echo "<td>" . $row['direccion'] . "</td>";
                     echo "<td>" . $row['celular'] . "</td>";
-                    // Agrega los iconos de eliminar y actualizar con las clases de Font Awesome
-                    echo "<td><i class='fa fa-trash'></i> <i class='fa fa-pencil'></i></td>";
+                    echo "<td>";
+                    // Agrega los botones de eliminar y actualizar con atributos data-id
+                    echo "<button class='btn btn-danger delete-button' data-id='" . $row['idpersona'] . "'><i class='fa fa-trash'></i></button>";
+                    echo "<button class='btn btn-primary edit-button' data-id='" . $row['idpersona'] . "'><i class='fa fa-pencil'></i></button>";
+                    echo "</td>";
                     echo "</tr>";
                 }
                 ?>
@@ -84,6 +87,35 @@
     </div>
     <!-- Incluye el script de Bootstrap 4 al final del cuerpo de la página -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Incluye jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Manejar el click del botón Eliminar
+            $(".delete-button").click(function() {
+                var id = $(this).data("id");
+                var confirmDelete = confirm("¿Estás seguro de que deseas eliminar esta persona?");
+                if (confirmDelete) {
+                    // Aquí puedes realizar una solicitud AJAX para eliminar la persona con el ID 'id'
+                    alert("Persona eliminada con éxito");
+                    // Puedes redirigir o recargar la página si es necesario
+                    // window.location.reload();
+                }
+            });
+
+            // Manejar el click del botón Actualizar
+            $(".edit-button").click(function() {
+                var id = $(this).data("id");
+                var confirmEdit = confirm("¿Deseas editar esta persona?");
+                if (confirmEdit) {
+                    // Redirigir a la página de edición o realizar alguna otra acción
+                    alert("Redirigir a la página de edición para la persona con ID " + id);
+                    // Puedes redirigir a la página de edición o realizar otras acciones según tus necesidades
+                    // window.location.href = "editar.php?id=" + id;
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
